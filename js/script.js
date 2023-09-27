@@ -24,16 +24,11 @@ function somaNumeros(){
     console.log(resultado)
 }
 
-function subtraiNum(a,b){
-    console.log(a-b);
-}
 
-function subtraiNumeros(){
-    let n1 = parseInt(prompt("Digite o primeiro número"))
-    let n2 = parseInt(prompt("Digite o segundo número"))
-    subtraiNum (n1,n2);
-}
 
+function subtraiNumeros(n1, n2) {
+    console.log(n1 - n2);
+}
 
 
 function criaObjeto(){
@@ -58,18 +53,15 @@ function calculadora() {
     switch (operacao) {
         case "somar":
             console.log(`Resultado: ${numero1 + numero2}`);
-            
             break;
         case "subtrair":
             console.log(`Resultado: ${numero1 - numero2}`);
-            
             break;
         case "multiplicar":
             console.log(`Resultado: ${numero1 * numero2}`);
-            
             break;
         case "dividir":
-            if (numero2 != 0) {
+            if (numero2 !== 0) {
                 console.log(`Resultado: ${numero1 / numero2}`);
             } else {
                 console.log("Erro: Divisão por zero não é permitida.");
@@ -85,7 +77,7 @@ function mudaConstante(){
     const nome = prompt('Digite seu nome:');
     console.log('Nome digitado:', nome);
   
-    const novoNome = prompt('Digite um novo nome:');
+    const novoNome = prompt('Digite um novo nome: ');
     console.log('Novo nome digitado:', novoNome);
   
     
@@ -112,4 +104,3 @@ function manipulaArrays(){
     console.log('Array após shift: ', cores)
 
 }
-   
